@@ -8,7 +8,7 @@ describe('CartItem', () => {
 
   // Test component UI
   it('displays item name and quantity from props', () => {
-    cy.findByTestId('itemName').should('contain.text', 'Chocolate Bar');
+    cy.findByTestId('item-name').should('contain.text', 'Chocolate Bar');
     cy.findByTestId('quantity').should('contain.text', '2');
   });
 
