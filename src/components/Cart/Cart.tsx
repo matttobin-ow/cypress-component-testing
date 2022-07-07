@@ -11,7 +11,7 @@ export default function Cart() {
   };
 
   return (
-    <div>
+    <div className="p-4 bg-blue-500">
       {items.map((item) => (
         <CartItem itemId={item.id} itemName={item.name} quantity={item.quantity} onRemove={handleRemove} />
       ))}
