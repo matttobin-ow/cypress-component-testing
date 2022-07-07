@@ -14,7 +14,7 @@ export default function CartItem({
   };
 
   return (
-    <div>
+    <div data-testid="cart-item">
       <span data-testid="item-name">{itemName}</span> - <span data-testId="quantity">{quantity}</span>{' '}
       <button onClick={removeItem}>Remove</button>
     </div>

@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "recoil": "^0.7.4"
   },
   "devDependencies": {
     "@testing-library/cypress": "^8.0.3",
