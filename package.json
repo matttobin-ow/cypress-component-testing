@@ -9,6 +9,7 @@
     "tw:watch": "tailwindcss -i ./src/index.css -o ./cypress/support/index.css --watch",
     "cy:open": "concurrently \"cypress open\" npm:tw:watch",
     "cy:comp": "cypress run --component",
+    "cy:e2e": "cypress run",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
     "storybook": "start-storybook -p 6006",
