@@ -9,7 +9,9 @@ import './commands';
 import '@testing-library/cypress/add-commands';
 
 // Import stylesheet
-import '../../src/index.css';
+// NOTE: Unable to use src/index.css - Issue with tailwind not rebuilding correctly when running cypress open
+// Work around by running concurrent cypress open and tailwind watch commands
+import './index.css';
 
 import { mount } from 'cypress/react';
 import { RecoilRoot } from 'recoil';
