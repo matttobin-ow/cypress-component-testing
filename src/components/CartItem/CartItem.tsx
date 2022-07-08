@@ -19,7 +19,7 @@ export default function CartItem({
         <span data-testid="item-name" className="font-semibold">
           {itemName}
         </span>{' '}
-        | Qty. <span data-testId="quantity">{quantity}</span>
+        | Qty. <span data-testid="quantity">{quantity}</span>
       </div>
       <button onClick={removeItem} className="text-red-500">
         Remove
