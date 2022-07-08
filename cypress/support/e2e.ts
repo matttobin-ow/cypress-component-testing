@@ -22,13 +22,13 @@ import '@testing-library/cypress/add-commands';
 declare global {
   namespace Cypress {
     interface Chainable {
-      visitStorybook: typeof cy.visit;
+      visitStory: typeof cy.visit;
     }
   }
 }
 
-// cy.visitStorybook
-Cypress.Commands.add('visitStorybook', (story) => {
+// cy.visitStory
+Cypress.Commands.add('visitStory', (story) => {
   // Visit iframe.html to render the component in isolation
   return cy.visit(`http://localhost:6006/iframe.html?id=${story}&viewMode=story`);
 });

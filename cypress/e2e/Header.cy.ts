@@ -1,9 +1,9 @@
 describe('Header', () => {
   beforeEach(() => {
-    cy.visitStorybook('component-testing-header--default');
+    cy.visitStory('component-testing-header--default');
   });
 
-  it('should display the header', () => {
+  it('should display a title', () => {
     cy.findByRole('heading', { name: 'Cypress Component Testing' }).should('exist');
   });
 });
