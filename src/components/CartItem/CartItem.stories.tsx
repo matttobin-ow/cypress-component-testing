@@ -12,7 +12,7 @@ const Template: ComponentStory<typeof CartItem> = (args) => <CartItem {...args} 
 export const Default = Template.bind({});
 
 Default.args = {
-  itemId: 1,
-  itemName: 'Chocolate Bar',
+  id: 1,
+  name: 'Chocolate Bar',
   quantity: 2,
 };

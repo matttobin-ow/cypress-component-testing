@@ -3,7 +3,7 @@ import CartItem from './CartItem';
 describe('CartItem', () => {
   beforeEach(() => {
     const onRemoveSpy = cy.spy().as('onRemoveSpy');
-    cy.mount(<CartItem itemId={1} itemName="Chocolate Bar" quantity={2} onRemove={onRemoveSpy} />);
+    cy.mount(<CartItem id={1} name="Chocolate Bar" quantity={2} onRemove={onRemoveSpy} />);
   });
 
   // Test component UI
