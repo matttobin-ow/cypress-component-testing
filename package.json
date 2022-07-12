@@ -13,7 +13,8 @@
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test-storybook": "test-storybook"
   },
   "dependencies": {
     "react": "^18.0.0",
@@ -27,7 +28,9 @@
     "@storybook/addon-interactions": "^6.5.9",
     "@storybook/addon-links": "^6.5.9",
     "@storybook/builder-vite": "^0.1.39",
+    "@storybook/jest": "^0.0.10",
     "@storybook/react": "^6.5.9",
+    "@storybook/test-runner": "^0.4.0",
     "@storybook/testing-library": "^0.0.13",
     "@testing-library/cypress": "^8.0.3",
     "@types/react": "^18.0.0",
@@ -37,6 +40,7 @@
     "babel-loader": "^8.2.5",
     "concurrently": "^7.2.2",
     "cypress": "^10.3.0",
+    "jest": "^27.5.1",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.4",
