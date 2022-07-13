@@ -47,11 +47,13 @@ UI, interactions and APIs can be tested. Tests can included components mounted w
 
 Similarly to Cypress Component Testing, these tests can be run in isolation without another dependency both from Storybook web interface or via the CLI.
 
-### Jest for component TDD
+### Jest
 
-Cypress allows you to see the components in the GUI test runner, meaning there's no need to mount components in an app or 'kitchen sink' page in order to see them while developing as you would normally need when using Jest for TDD.
+For a Test Drive Development workflow, Cypress Component Testing allows you to see the components in the GUI test runner, meaning there's no need to mount components in an app or 'kitchen sink' page in order to see them while developing as you would normally need when using Jest for TDD.
 
-If you're also performing integration or E2E testing with Cypress, then only one tool is needed, no need to configure two separate tools.
+If you're also performing integration or E2E testing with Cypress, then only one tool is needed, and there is no need to configure two separate tools.
+
+When it comes to performance, however, Jest has a clear advantage over Cypress Component Testing. After running the same component tests in both Jest and Cypress, the [results](https://github.com/matttobin-ow/cypress-component-testing/runs/7318465892?check_suite_focus=true) show Jest as the winner. Not only is the overall Jest job faster than Cypress (Cypress has a pretty long initial start up time) but each individual test is also faster with Jest.
 
 ## Caveats
 
